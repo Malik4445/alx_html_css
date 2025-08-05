@@ -1,0 +1,1 @@
+This project is to give a first hand view and knowlegde about css and its stylings 
