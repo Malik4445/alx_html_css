@@ -72,3 +72,181 @@ header nav ul a {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+/* Quote Section */
+.quote_section {
+    background-color: #C271FF;
+    padding: 50px 20px;
+}
+
+.quote_section > div {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.quote_section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.quote_section blockquote {
+    font-style: italic;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.quote_section h3 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 10px 0 0;
+}
+
+.quote_section p {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Videos List Section */
+.videos_section {
+    padding: 50px 20px;
+    background-color: #F8F8F8;
+    color: #000;
+    text-align: center;
+}
+
+.videos_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.videos_section .videos_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.videos_section .video_card {
+    background-color: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 240px;
+    padding: 15px;
+}
+
+.videos_section .video_card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.videos_section .video_card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.videos_section .video_card p {
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.videos_section .video_card .author_info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.videos_section .video_card .author_info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.videos_section .video_card .author_info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #C271FF;
+}
+
+.videos_section .video_card .rating {
+    display: flex;
+    margin-top: 10px;
+}
+
+.videos_section .video_card .rating i {
+    color: #C271FF;
+}
+
+.videos_section .video_card .rating p {
+    margin-left: auto;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Free Membership Section */
+.membership_section {
+    padding: 50px 20px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+}
+
+.membership_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.membership_section .memberships_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.membership_section .membership_card {
+    background-color: #FFF;
+    width: 240px;
+    padding: 15px;
+}
+
+.membership_section .membership_card img {
+    width: 40px;
+    height: 40px;
+}
+
+.membership_section .membership_card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.membership_section .membership_card p {
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.membership_section button {
+    background-color: #C271FF;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 40px;
+}
