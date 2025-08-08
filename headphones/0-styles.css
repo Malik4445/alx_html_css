@@ -1,0 +1,151 @@
+/* General Styling & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+.header-hero-container {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo img {
+    height: 30px; /* Adjust as needed */
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+    color: #FF6565;
+}
+
+/* Mobile Menu */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 70px);
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #FF6565;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hero-button:hover,
+.hero-button:active {
+    opacity: 0.9;
+}
+
+.hero-description {
+    max-width: 500px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333; /* For visibility */
+        padding: 10px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
